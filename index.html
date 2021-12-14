@@ -5,7 +5,9 @@
   <title> Web開発の練習１</title>
   <link rel="stylesheet" href="mystyle.css">
   <script src=“myjs.js"></script> <!--この行を追加-->
+  
   <link rel="stylesheet" href="mystyle.css"> <!--この行を追加-->
+  <link rel="stylesheet" href="imagechange.css">
   <!--
    <script src="myjs.js"></script>
 --> 
@@ -156,7 +158,7 @@ onclick="saygoodbye61();">
 
 <br>
 <h1>練習問題6.9</h1>
-<h1>JavaScriptによるページの変更69</h1>
+<h1>JavaScriptによるページの変更6.9</h1>
 <div id="txt1" >
   <input type="button" value="テキストの変更" onclick="txtchange1();">
   城西大学</div>
@@ -165,20 +167,26 @@ onclick="saygoodbye61();">
   <h1>練習問題6.10</h1>
   <div id="image1" >
   <input type="button" value="画像の変更" onclick="imgchange1();">
-  <img src='./image/keiei_small.jpg' id="logo" alt="josailogo">
-
+  <img src='./image/keiei_small.jpg' id="logo" alt="josailogo" class="imagechange">
+  <br>
+  <br>
   <input type="button" value="元に戻す" onclick="imgchange2();">
-  <img src='./image/josailogo.png' id="top" alt="josailogo">
+  <!--<img src='./image/josailogo.png' id="top" alt="josailogo">-->
 </div>
 
+ <br> <h1>練習問題6.11</h1><form name="timer">
+<input type="button" value="スタート" onclick="startfnc()">
+<br> 
+<input type="text" name="moji" size="30" value=""> </form>
 
-  <br>
-  <h1>練習問題6.11</h1>
-  <form name="timer">
-   <input type="button" value="スタート" onclick="startfnc()">
-   <br> 
-   <input type="text" name="moji" size="30" value=""> </form>
-
+<form> <input type="button" value="Timer"
+     onclick="setTimeout('mes()',3000)"> </form>
+  
+<form name="timer">
+<input type="button" value="スタート" onclick="hyoji()">
+<br> 
+<input type="text" name="moji" size="30" value=""> 
+</form>
 
 
 </body>
